@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "15416750627",
+    "firebase_url": "https://apmc-grocery-app-test.firebaseio.com",
+    "project_id": "apmc-grocery-app-test",
+    "storage_bucket": "apmc-grocery-app-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15416750627:android:53e18419edc60df83db796",
+        "android_client_info": {
+          "package_name": "com.example.apmc_grocery_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15416750627-e5g16rdg8c9g1vjl8njlha2d34j4bdb0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAca91cUdYjvekrN2ERRsmJU81Z4GLktrw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "15416750627-e5g16rdg8c9g1vjl8njlha2d34j4bdb0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

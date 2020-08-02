@@ -10,17 +10,19 @@ class DatabaseServices {
   DatabaseServices({@required this.categoryName});
 
   Future<List<Product>> getInventoryData() async {
-    await Firestore.instance.collection(categoryName).getDocuments().then((QuerySnapshot snapshot) {
-      snapshot.documents.forEach((element) {
+    print('Inside getInventory Data');
+    await Firestore.instance
+        .collection(categoryName)
+        .getDocuments()
+        .then((QuerySnapshot snapshot) {
+      snapshot.documents.forEach((item) {
         inventory.add(Product(
-          englishName: element.data['English Name'],
-          marathiName: element.data['Marathi Name'],
-          unit: (categoryName == 'Vegetables') ? 'gm' : element.data['Unit'],
-          rate: element.data['Rate'],
-        ));
+            englishName: item.data['English Name'],
+            marathiName: item.data['Marathi Name'],
+            unit: (categoryName == 'Vegetables') ? 'gm' : item.data['Unit'],
+            rate: item.data['Rate']));
       });
     });
     return inventory;
   }
-
 }
